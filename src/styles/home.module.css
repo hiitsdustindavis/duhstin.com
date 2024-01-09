@@ -1,0 +1,21 @@
+.contentSection {
+    width: 100%;
+    min-height: 100vh;
+}
+.contentSection h1 {
+    font-size: 40px;
+}
+.contentSection .contentWrapper {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 8rem 15px 10rem;
+    display: flex;
+}
+.contentSection:nth-child(even) {
+    background: #eab412;
+}
+
+.column2 {
+    width: 50%;
+    display: block;
+}
