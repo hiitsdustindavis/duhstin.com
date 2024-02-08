@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
   function make_base()
   {
     let base_image = new Image();
-    base_image.src = '/thispersondoesnotexist.jpg';
+    base_image.src = '/thispersondoesnotexist-.jpg';
     base_image.onload = function(){
       ctx.drawImage(base_image, 0, 0);
     }

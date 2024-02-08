@@ -6,5 +6,5 @@ module.exports = {
     title: `duhstin.com`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-sass`],
 }

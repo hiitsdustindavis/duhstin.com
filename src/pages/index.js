@@ -3,7 +3,8 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Header from '../components/Header'
 import * as style from "../styles/home.module.css"
-import "./p5Portrait.js"
+// import "./p5Portrait.js"
+import P5Sketch from '../components/P5Sketch';
 
 const IndexPage = () => {
   return (
@@ -24,17 +25,56 @@ const IndexPage = () => {
             <p>I have 0ver 20 years of experience in graphic and web design and 8 years in Web development.</p>
           </div>
           <div className={style.column2}>
-            <canvas id="canvas"></canvas>
+          <P5Sketch />
           </div>
         </div>
       </section>
       <section className = {style.contentSection} id="ability">
         <div className={style.contentWrapper}>
-          <div>
             <h2>Ability</h2>
-            <p>Blah blah blah blah blah</p>
+
+            <div class="row abilities">
+              <div class="col-3 ability">
+                  <div class="emoji"></div>
+                  <h3><span>39</span>Years of thinking deeply</h3>
+              </div>
+              <div class="col-3 ability">
+                  <div class="emoji"></div>
+                  <h3><span>26</span>Years Practicing Design</h3>
+              </div>
+              <div class="col-3 ability">
+                  <div class="emoji"></div>
+                  <h3><span>8</span>Years Practicing Web Development</h3>
+              </div>
+            </div>
+
+            <div class="row abilities-text">
+              <div class="col-3 ability-text">
+                <h4>Software</h4>
+                <ul>
+                  <li><img src=""/>List Item</li>
+                  <li><img src=""/>List Item</li>
+                  <li><img src=""/>List Item</li>
+                </ul>
+              </div>
+              <div class="col-3 ability-text">
+                <h4>Design Practices</h4>
+                <ul>
+                  <li>List Item</li>
+                  <li>List Item</li>
+                  <li>List Item</li>
+                </ul>
+              </div>
+              <div class="col-3 ability-text">
+                <h4>Development Practices</h4>
+                <ul>
+                  <li>List Item</li>
+                  <li>List Item</li>
+                  <li>List Item</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
       </section>
       <section className = {style.contentSection} id="simplicity">
         <div className={style.contentWrapper}>

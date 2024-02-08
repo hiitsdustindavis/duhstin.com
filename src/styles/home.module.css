@@ -10,6 +10,7 @@
     margin: 0 auto;
     padding: 8rem 15px 10rem;
     display: flex;
+    flex-direction: column;
 }
 .contentSection:nth-child(even) {
     background: #eab412;
