@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import '../styles/global-styles.scss'
+import '../styles/global-styles.css'
 
 
 export default function Layout( { children } ) {

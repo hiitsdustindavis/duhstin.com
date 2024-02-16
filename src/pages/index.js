@@ -2,6 +2,7 @@ import * as React from "react"
 // import { Script } from "gatsby"
 import Layout from "../components/Layout"
 import Header from '../components/Header'
+import "../styles/global-styles.css"
 import * as style from "../styles/home.module.css"
 // import "./p5Portrait.js"
 import P5Sketch from '../components/P5Sketch';
@@ -33,7 +34,7 @@ const IndexPage = () => {
         <div className={style.contentWrapper}>
             <h2>Ability</h2>
 
-            <div class="row abilities">
+            <div class="row abilities cards">
               <div class="col-3 ability">
                   <div class="emoji"></div>
                   <h3><span>39</span>Years of thinking deeply</h3>
@@ -47,8 +48,7 @@ const IndexPage = () => {
                   <h3><span>8</span>Years Practicing Web Development</h3>
               </div>
             </div>
-
-            <div class="row abilities-text">
+            <div class="row abilities text">
               <div class="col-3 ability-text">
                 <h4>Software</h4>
                 <ul>
