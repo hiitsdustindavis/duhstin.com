@@ -1,6 +1,7 @@
 import * as React from "react"
 // import { Script } from "gatsby"
 import Layout from "../components/Layout"
+import "../components/MouseCursor"
 import Header from '../components/Header'
 import "../styles/global-styles.css"
 import * as style from "../styles/home.module.css"
@@ -45,32 +46,33 @@ const IndexPage = () => {
               </div>
               <div class="col-3 ability">
                   <div class="emoji"></div>
-                  <h3><span>8</span>Years Practicing Web Development</h3>
+                  <h3><span>8</span>Years Practicing <br></br>Web Development</h3>
               </div>
             </div>
             <div class="row abilities text">
               <div class="col-3 ability-text">
                 <h4>Software</h4>
-                <ul>
-                  <li><img src=""/>List Item</li>
-                  <li><img src=""/>List Item</li>
-                  <li><img src=""/>List Item</li>
+                <ul class="no-bullet">
+                  <li><img src="" alt=""/>Adobe Creative Suite</li>
+                  <li><img src="" alt=""/>Figma</li>
+                  <li><img src="" alt=""/>Spline 3D Design</li>
+                  <li><img src="" alt=""/>Visual Studio Code</li>
                 </ul>
               </div>
               <div class="col-3 ability-text">
                 <h4>Design Practices</h4>
-                <ul>
-                  <li>List Item</li>
-                  <li>List Item</li>
-                  <li>List Item</li>
+                <ul class="no-bullet">
+                  <li>Solid Concepts > Fancy Fillers</li>
+                  <li>Systems = Consistency = Joyful UX</li>
+                  <li>Empathy for Visitors Always</li>
                 </ul>
               </div>
               <div class="col-3 ability-text">
                 <h4>Development Practices</h4>
-                <ul>
-                  <li>List Item</li>
-                  <li>List Item</li>
-                  <li>List Item</li>
+                <ul class="no-bullet">
+                  <li>WordPress / PHP</li>
+                  <li>React / Javascript / Node</li>
+                  <li>CSS / Sass / CSS Modules</li>
                 </ul>
               </div>
             </div>

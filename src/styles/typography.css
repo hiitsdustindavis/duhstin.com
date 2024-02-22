@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..700&display=swap');
 
 h2 {
-    font-size: 48px;
-    font-weight: 400;;
-    margin-bottom: 3rem;
+    font-size: 68px;
+    font-weight: 300;;
+    margin-bottom: 6rem;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+ul.no-bullet {
+    text-decoration: none;
+    list-style: none;
 }
