@@ -1,4 +1,5 @@
 import * as React from "react"
+import Spline from '@splinetool/react-spline'
 // import { Script } from "gatsby"
 import Layout from "../components/Layout"
 import "../components/MouseCursor"
@@ -13,8 +14,11 @@ const IndexPage = () => {
     <Layout>
     <main>
       <section className = {style.contentSection} >
-        <div className={style.contentWrapper}>
-          <spline-viewer url="https://prod.spline.design/gN31zazL01CcFhb7/scene.splinecode"></spline-viewer>
+        <div className={style.contentWrapper.fullScreen}>
+          {/* <spline-viewer url="https://prod.spline.design/gN31zazL01CcFhb7/scene.splinecode"></spline-viewer> */}
+          {/* <Spline scene="https://prod.spline.design/QhjggYp-ewt91aq5/scene.splinecode" /> */}
+          <Spline scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
+
         </div>
         <Header/>
       </section>

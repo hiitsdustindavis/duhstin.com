@@ -11,8 +11,11 @@ body {
 
 header {
     width: 100%;
+    min-height: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
 
 header nav {
@@ -138,3 +141,10 @@ h1, h2, h3, h4, h5, h6 {
     top: 22px;
     left: 22px;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    z-index: 100;
+  }
