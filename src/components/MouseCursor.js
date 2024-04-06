@@ -1,9 +1,11 @@
 window.onload = function(){ 
+
+console.log ('window loaded');
 let constrain = 600;
-let mouseOverContainer = document.getElementById("ability");
+let mouseOverContainer = document.querySelector("#ability");
 let mouseOverItems = document.querySelectorAll(".col-3.ability");
 
-
+console.dir("mouseOverContainer " + mouseOverContainer);
     function transforms(x, y, el) {
       let box = el.getBoundingClientRect();
       let calcX = -(y - box.y - (box.height / 2)) / constrain;
@@ -12,7 +14,6 @@ let mouseOverItems = document.querySelectorAll(".col-3.ability");
       return "perspective(100px) "
         + "   rotateX("+ calcX +"deg) "
         + "   rotateY("+ calcY +"deg) "
-        // + "   transition: all .1s ease-in-out;";
     };
     
     function transformElement(el, xyEl) {

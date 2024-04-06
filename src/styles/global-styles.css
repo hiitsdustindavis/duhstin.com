@@ -15,14 +15,36 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: absolute;
+    bottom: 0;
 }
-
+header .logo {
+    position: absolute;
+    left: 20px;
+    max-height: 10px;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: all .25s ease-in-out;
+}
+header.sticky {
+    position: fixed;
+    top: 0;
+    bottom: unset;
+    background: white;
+    width: 100%;
+    z-index: 100;
+}
+header.sticky .logo {
+    position: absolute;
+    left: 20px;
+    max-height: 50px;
+    transform: translateX(0px);
+    opacity: 1;
+}
 header nav {
     display: flex;
     justify-content: center;
 }
-
 nav a {
     margin-right: 10%;
 }
@@ -39,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .row {
     display: flex;
+    flex-direction: row;
 }
 .col {
     display: flex;
@@ -51,7 +74,23 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 6.5%;
 }
 
+/* About */
+#about .text p, #contact .text p {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+.portrait {
+    width: auto;
+    max-width: 100%;
+    max-height: 600px;
+}
+
 /* Abilities Section */
+#ability h2 {
+    margin-bottom: 100px;
+}
 .abilities:first-of-type {
     margin-bottom: 6rem;
 }
@@ -141,10 +180,3 @@ h1, h2, h3, h4, h5, h6 {
     top: 22px;
     left: 22px;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    background: white;
-    width: 100%;
-    z-index: 100;
-  }

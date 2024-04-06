@@ -10,7 +10,7 @@ export default function Layout( { children } ) {
         <div className="content">
             { children }
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

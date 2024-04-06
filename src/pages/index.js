@@ -1,42 +1,49 @@
 import * as React from "react"
 import Spline from '@splinetool/react-spline'
-// import { Script } from "gatsby"
 import Layout from "../components/Layout"
-import "../components/MouseCursor"
 import Header from '../components/Header'
+// import P5Sketch from '../components/P5Sketch'
+import dustinPortait from '../images/dustin_portrait.jpg'
+// import * as style from "../styles/home.module.css"
+import * as layout from "../styles/layout.module.css"
+import * as typography from "../styles/typography.module.css"
+import "../components/MouseCursor"
 import "../styles/global-styles.css"
-import * as style from "../styles/home.module.css"
-// import "./p5Portrait.js"
-import P5Sketch from '../components/P5Sketch';
 
 const IndexPage = () => {
   return (
     <Layout>
     <main>
-      <section className = {style.contentSection} >
-        <div className={style.contentWrapper.fullScreen}>
-          {/* <spline-viewer url="https://prod.spline.design/gN31zazL01CcFhb7/scene.splinecode"></spline-viewer> */}
-          {/* <Spline scene="https://prod.spline.design/QhjggYp-ewt91aq5/scene.splinecode" /> */}
+      <section className = {layout.contentSection} >
+        <div className={layout.contentWrapper.fullScreen}>
           <Spline scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
-
         </div>
         <Header/>
       </section>
-      <section className = {style.contentSection} id="about">
-        <div className={style.contentWrapper}>
-          <div className={style.column2}>
-            <h2>About</h2>
-            <p>My name is Dustin Davis</p>
-            <p>I’m a Web Designer and Developer</p>
-            <p>I have 0ver 20 years of experience in graphic and web design and 8 years in Web development.</p>
-          </div>
-          <div className={style.column2}>
-          <P5Sketch />
+      <section className = {layout.contentSection} id="about">
+      <div className={layout.contentWrapper}>
+        <div class="row">
+          <div className={layout.full}>
+              <h2>About</h2>
           </div>
         </div>
+        <div class="row">
+            <div className={layout.half}>
+              <img class="portrait" src={dustinPortait}/>
+              {/* <P5Sketch /> */}
+          </div>
+            <div className={`${layout.half} text`}>
+              <p>My name is Dustin Davis</p>
+              <p>I’m a Web Designer and Developer</p>
+              <p>I have 0ver 20 years of experience in graphic and web design and 8 years in Web development.</p>
+              <p>I'm bilingual. I like cities and the woods.</p>
+              <p>I see latent improvements everywhere.</p>
+            </div>
+        </div>
+        </div>
       </section>
-      <section className = {style.contentSection} id="ability">
-        <div className={style.contentWrapper}>
+      <section className = {layout.contentSection} id="ability">
+        <div className={layout.contentWrapper}>
             <h2>Ability</h2>
 
             <div class="row abilities cards">
@@ -50,7 +57,7 @@ const IndexPage = () => {
               </div>
               <div class="col-3 ability">
                   <div class="emoji"></div>
-                  <h3><span>8</span>Years Practicing <br></br>Web Development</h3>
+                  <h3 className={typography.h3}><span>8</span>Years Practicing <br></br>Web Development</h3>
               </div>
             </div>
             <div class="row abilities text">
@@ -82,20 +89,31 @@ const IndexPage = () => {
             </div>
           </div>
       </section>
-      <section className = {style.contentSection} id="simplicity">
-        <div className={style.contentWrapper}>
+      {/* <section className = {layout.contentSection} id="simplicity">
+        <div className={layout.contentWrapper}>
           <div>
             <h2>Simplicity</h2>
             <p>Blah blah blah blah blah</p>
           </div>
         </div>
-      </section>
-      <section className = {style.contentSection} id="contact">
-        <div className={style.contentWrapper}>
-          <div>
-            <h2>Contact</h2>
-            <p>Blah blah blah blah blah</p>
+      </section> */}
+      <section className = {layout.contentSection} id="contact">
+      <div className={layout.contentWrapper}>
+        <div class="row">
+          <div className={layout.full}>
+              <h2>Contact</h2>
           </div>
+        </div>
+        <div class="row">
+            <div className={`${layout.half} text`}>
+              <p>Reach out anytime and I'll get right back to ya :)</p>
+              <p>Portfolio and CV upon request ;)</p>
+              <p><span>💌</span> <a href="mailto:hiitsdustindavis@gmail.com">hiitsdustindavis@gmail.com</a></p>
+            </div>
+            <div className={layout.half}>
+            <div><iframe src="https://giphy.com/embed/QWkuGmMgphvmE" width="100%" height="100%" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
         </div>
       </section>
     </main>

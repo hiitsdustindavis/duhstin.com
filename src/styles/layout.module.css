@@ -1,0 +1,57 @@
+.full {
+    width: 100%;
+    display: block;
+}
+.half {
+    width: 49%;
+    display: block;
+}
+.half:not(:last-child){
+    margin-right: 2%;
+}
+.third {
+    width: 31.333%;
+    display: block;
+}
+.third:not(:last-child){
+    margin-right: 2%;
+}
+.quarter {
+    width: 25%;
+    display: block;
+}
+
+.contentSection {
+    width: 100%;
+    min-height: 100vh;
+}
+.contentSection:nth-child(even) {
+    background: #eab412;
+}
+.contentWrapper {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 8rem 15px 10rem;
+}
+.contentRow {
+    display: flex;
+    flex-direction: row;
+}
+.contentRow:not(:last-child){
+    margin-bottom: 40px;
+}
+.contentWrapperHasCols {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 8rem 15px 10rem;
+    display: flex;
+    flex-direction: row;
+}
+.contentWrapper.fullScreen {
+    max-width: 100%; 
+    height: 100vh;
+    margin: 0 auto;
+    padding: 8rem 15px 10rem;
+    display: flex;
+    flex-direction: column;
+}
