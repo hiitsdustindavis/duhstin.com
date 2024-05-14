@@ -4,9 +4,10 @@
 @import url('./color.css');
 
 body {
-    font-family: 'Spline Sans Mono', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 0px;
     padding: 0px;
+    font-weight: 300;;
 }
 
 header {
@@ -52,7 +53,16 @@ nav a {
 h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
 }
-
+ul {
+    padding-left: 1rem;
+    text-indent: 0rem;
+}
+ul.no-bullet {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0rem;
+    text-indent: 0rem;
+}
 .layout {
     margin: 0 auto;
 }
@@ -179,4 +189,46 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     top: 22px;
     left: 22px;
+}
+
+/* Page CV */
+.page-cv img.logo {
+    max-width: 120px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+}
+.page-cv h4 {
+    padding-top: 48px;
+}
+.page-cv [class *= "layout-module--contentWrapper"] {
+    padding-top: 48px;
+}
+.page-cv strong {
+    padding-top: 32px;
+    display: block;
+}
+.page-cv h4 + strong{
+    padding-top: 16px;
+}
+.page-cv .button.print {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    background: #fcb707;
+    color: black;
+    border: 1px solid #000;
+    padding: 0.50rem 1rem;
+    border-radius: 5px;
+    font-family: 'Space Mono';
+    font-style: italic;
+    transition: all .3s ease-in-out;
+}
+.page-cv .button.print:hover {
+    color: #fcb707;
+    background: black;
+    border: 1px solid #000;
+    padding: 0.50rem 1rem;
+    border-radius: 0px;
+    font-family: 'Space Mono';
+    font-style: italic;
 }

@@ -44,7 +44,7 @@ function Header() {
       ref={headerRef}
       className={isHeaderSticky ? 'sticky' : ''}
     >
-      <img class="logo" src={logo}/>
+      <Link to="/"><img class="logo" src={logo}/></Link>
       <nav>
         <Link to="#about">About</Link>
         <Link to="#ability">Ability</Link>

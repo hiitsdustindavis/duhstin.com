@@ -2,9 +2,8 @@ import * as React from "react"
 import Spline from '@splinetool/react-spline'
 import Layout from "../components/Layout"
 import Header from '../components/Header'
-// import P5Sketch from '../components/P5Sketch'
+import { Link } from "gatsby"
 import dustinPortait from '../images/dustin_portrait.jpg'
-// import * as style from "../styles/home.module.css"
 import * as layout from "../styles/layout.module.css"
 import * as typography from "../styles/typography.module.css"
 import "../components/MouseCursor"
@@ -73,7 +72,7 @@ const IndexPage = () => {
               <div class="col-3 ability-text">
                 <h4>Design Practices</h4>
                 <ul class="no-bullet">
-                  <li>Solid Concepts > Fancy Fillers</li>
+                  <li>Solid Concepts `&gt;` Fancy Fillers</li>
                   <li>Systems = Consistency = Joyful UX</li>
                   <li>Empathy for Visitors Always</li>
                 </ul>
@@ -107,7 +106,8 @@ const IndexPage = () => {
         <div class="row">
             <div className={`${layout.half} text`}>
               <p>Reach out anytime and I'll get right back to ya :)</p>
-              <p>Portfolio and CV upon request ;)</p>
+              <p><Link to="/cv/">Curriculum Vitae</Link></p>
+              <p>Portfolio upon request ;)</p>
               <p><span>💌</span> <a href="mailto:hiitsdustindavis@gmail.com">hiitsdustindavis@gmail.com</a></p>
             </div>
             <div className={layout.half}>
