@@ -34,24 +34,58 @@ header.sticky {
     background: white;
     width: 100%;
     z-index: 100;
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.3);
 }
 header.sticky .logo {
     position: absolute;
     left: 20px;
+    top: 22px;
     max-height: 50px;
     transform: translateX(0px);
     opacity: 1;
 }
 header nav {
-    display: flex;
     justify-content: center;
 }
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+nav li {
+    flex: 1;
+    text-align: center;
+}
 nav a {
-    margin-right: 10%;
+    font-size: 1.25rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
+}
+a {
+    color: inherit;
+    transition: all .25s ease-in-out;
+}
+p a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    background-color: #111;
+}
+p a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+p a {
+    position: relative;
 }
 ul {
     padding-left: 1rem;
@@ -63,6 +97,7 @@ ul.no-bullet {
     padding-left: 0rem;
     text-indent: 0rem;
 }
+
 .layout {
     margin: 0 auto;
 }
@@ -83,7 +118,21 @@ ul.no-bullet {
 .col-3:not(:last-child){
     margin-right: 6.5%;
 }
-
+.home .hero > div {
+    display: block;
+}
+.home .hero .logo {
+    display: none;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1 {
+    margin-top: -200px;
+}
 /* About */
 #about .text p, #contact .text p {
     margin-bottom: 30px;
@@ -228,7 +277,60 @@ ul.no-bullet {
     background: black;
     border: 1px solid #000;
     padding: 0.50rem 1rem;
-    border-radius: 0px;
+    border-radius: 100px;
     font-family: 'Space Mono';
     font-style: italic;
+}
+@media screen and (max-width: 480px) {
+    header nav {
+        width: 100%;
+        padding: 0 30px;
+    }
+    header.sticky .logo {
+        display: none;
+    }
+    .col-3, .col-3:not(:last-child) {
+        width: 100%;
+        margin-right: unset;
+    }
+    .row {
+        flex-direction: column;
+    }
+    #about .text p, #contact .text p {
+        font-size: 22px;
+    }
+    .abilities:first-of-type {
+        margin-bottom: 32px;
+    }
+    .ability {
+        padding-top: 48px;
+        margin-bottom: 100px;
+    }
+    .ability .emoji {
+        left: calc(50% - 50px)
+    }
+    .home .hero {
+        padding: 30px;
+        justify-content: space-around;
+        height: 90vh;
+    }
+    .home .hero > div {
+        display: none;
+    }
+    .home .hero .logo {
+        display: block;
+        width: 100%;
+        margin-left: -40px;
+    }
+
+    .home .hero h1 {
+        margin-top: 60px;
+        margin: 0 auto;
+        text-align: center
+    }
+}
+@media print {
+    .page-cv .button.print {
+        display: none;
+    }
 }

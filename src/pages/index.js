@@ -3,7 +3,9 @@ import Spline from '@splinetool/react-spline'
 import Layout from "../components/Layout"
 import Header from '../components/Header'
 import { Link } from "gatsby"
+import {Helmet} from "react-helmet";
 import dustinPortait from '../images/dustin_portrait.jpg'
+import logo from '../images/duhstin.com-logo-static.jpg'
 import * as layout from "../styles/layout.module.css"
 import * as typography from "../styles/typography.module.css"
 import "../components/MouseCursor"
@@ -12,10 +14,13 @@ import "../styles/global-styles.css"
 const IndexPage = () => {
   return (
     <Layout>
+    <Helmet><body className="home" /></Helmet>
     <main>
       <section className = {layout.contentSection} >
-        <div className={layout.contentWrapper.fullScreen}>
+        <div class="hero">
           <Spline scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
+          <img class="logo" src={logo}/>
+          <h1>Hey friend, 👋 Welcome to duhstin.com </h1>
         </div>
         <Header/>
       </section>
@@ -72,7 +77,7 @@ const IndexPage = () => {
               <div class="col-3 ability-text">
                 <h4>Design Practices</h4>
                 <ul class="no-bullet">
-                  <li>Solid Concepts `&gt;` Fancy Fillers</li>
+                  <li>Solid Concepts &gt; Fancy Fillers</li>
                   <li>Systems = Consistency = Joyful UX</li>
                   <li>Empathy for Visitors Always</li>
                 </ul>
@@ -108,7 +113,7 @@ const IndexPage = () => {
               <p>Reach out anytime and I'll get right back to ya :)</p>
               <p><Link to="/cv/">Curriculum Vitae</Link></p>
               <p>Portfolio upon request ;)</p>
-              <p><span>💌</span> <a href="mailto:hiitsdustindavis@gmail.com">hiitsdustindavis@gmail.com</a></p>
+              <p><a href="mailto:hiitsdustindavis@gmail.com"><span>💌</span> hiitsdustindavis@gmail.com</a></p>
             </div>
             <div className={layout.half}>
             <div><iframe src="https://giphy.com/embed/QWkuGmMgphvmE" width="100%" height="100%" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></div>

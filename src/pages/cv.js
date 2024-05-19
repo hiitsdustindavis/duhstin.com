@@ -1,11 +1,9 @@
 import * as React from "react"
 import {Helmet} from "react-helmet";
 import Layout from "../components/Layout"
-import Header from '../components/Header'
 import * as layout from "../styles/layout.module.css"
 import logo from '../images/duhstin.com-logo-static.jpg'
 import { Link } from "gatsby"
-import * as typography from "../styles/typography.module.css"
 import "../styles/global-styles.css"
 
 export default function CVPage() {
@@ -36,17 +34,18 @@ export default function CVPage() {
                 <li>Growth mindset believer</li>
                 <li>Active listener</li>
                 <li>Clear communicator</li>
-                <li>Project organizer</li>
                 <li>Systems thinker</li>
                 <li>Atomic designer</li>
+                <li>Explorative Coder</li>
               </ul>
             </div>
             <div className={layout.third}>
               <strong>Software</strong>
               <ul>
+                <li>Figma</li>
                 <li>Adobe Creative Suite</li>
                 <li>Affinity</li>
-                <li>Sketch</li>
+                <li>Spline Design 3D</li>
                 <li>Blender</li>
                 <li>Unity</li>
               </ul>
@@ -54,21 +53,21 @@ export default function CVPage() {
             <div className={layout.third}>
               <strong>Dev Technologies</strong>
               <ul>
+              <li>Wordpress / PHP</li>
+              <li>jQuery / JavaScript / React </li>
                 <li>HTML5 / Markdown</li>
                 <li>CSS3 / SCSS / SASS</li>
-                <li>jQuery / JavaScript / React </li>
-                <li>Wordpress / PHP</li>
                 <li>Git / Subversion</li>
-                <li>NPM / Gulp</li>
+                <li>NPM / Gulp / Bash Terminal</li>
               </ul>
             </div>
           </div>
           <h4>Professional Experience</h4>
-          <strong>Tenrec | UI Designer and Developer | Remote | August 2016 - Present</strong>
+          <strong>Tenrec Inc. | Lead UI Designer and Developer | Remote | August 2016 - Present</strong>
           <ul>
-            <li>Create clean, usable, and beautiful UI designs from wire frame to prototype</li>
-            <li>Build solid, UX focused markup, styling, and scripts</li>
-            <li>Deploy customized WordPress sites between server instances with Subversion</li>
+            <li>Create clean, usable, and beautiful UI designs from wireframe to prototype</li>
+            <li>Build solid, user-focused, accessible markup, efficient styling, and integrate 3rd party APIs and services</li>
+            <li>Maintain, improve, and optimize WordPress sites with latest plugins, scripts, and design updates</li>
           </ul>
           <strong>Freelance Graphic Design | Portland, OR | November 2014 - January 2016</strong>
           <ul>

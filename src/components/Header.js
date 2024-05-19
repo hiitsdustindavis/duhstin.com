@@ -1,6 +1,7 @@
 import { Link } from 'gatsby'
 import React, { useState, useEffect, useRef } from 'react'
 import logo from '../images/duhstin.com-logo-static.jpg'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 function Header() {
   const [isHeaderAtTop, setIsHeaderAtTop] = useState(false);
@@ -46,10 +47,12 @@ function Header() {
     >
       <Link to="/"><img class="logo" src={logo}/></Link>
       <nav>
-        <Link to="#about">About</Link>
-        <Link to="#ability">Ability</Link>
-        {/* <Link to="#simplicity">Simplicity</Link> */}
-        <Link to="#contact">Contact</Link>
+        <ul>
+          <li><AnchorLink to="#about">About</AnchorLink></li>
+          <li><AnchorLink to="#ability">Ability</AnchorLink></li>
+          <li><AnchorLink to="#contact">Contact</AnchorLink></li>
+        </ul>
+        {/* <AnchorLink to="#simplicity">Simplicity</AnchorLink> */}
       </nav>
     </header>
   );
