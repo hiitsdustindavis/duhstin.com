@@ -53,15 +53,15 @@ const IndexPage = () => {
             <div class="row abilities cards">
               <div class="col-3 ability">
                   <div class="emoji"></div>
-                  <h3><span>39</span>Years of thinking deeply</h3>
+                  <h3><span>39</span>Years of <br></br>thinking deeply</h3>
               </div>
               <div class="col-3 ability">
                   <div class="emoji"></div>
-                  <h3><span>26</span>Years Practicing Design</h3>
+                  <h3><span>26</span>Years Practicing <br></br>Design</h3>
               </div>
               <div class="col-3 ability">
                   <div class="emoji"></div>
-                  <h3 className={typography.h3}><span>8</span>Years Practicing <br></br>Web Development</h3>
+                  <h3><span>8</span>Years Practicing <br></br>Web Development</h3>
               </div>
             </div>
             <div class="row abilities text">
