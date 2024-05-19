@@ -56,8 +56,17 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 840px) {
-
+@media screen and (max-width: 1024px) {
+    .contentSection {
+        width: 100%;
+        min-height: unset;
+        padding: 30px;
+    }
+    .contentSection:first-of-type {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -66,5 +75,8 @@
     }
     .contentWrapper { 
         padding: 64px 15px 80px;
+    }
+    .contentSection {
+        padding: 0px;
     }
 }
