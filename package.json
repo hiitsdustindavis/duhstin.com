@@ -17,7 +17,6 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.64",
-    "babel-plugin-remove-graphql-queries": "^5.13.1",
     "gatsby": "^5.13.0",
     "gatsby-adapter-netlify": "^1.1.5",
     "gatsby-plugin-anchor-links": "^1.2.1",
