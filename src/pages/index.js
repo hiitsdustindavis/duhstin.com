@@ -19,7 +19,7 @@ const IndexPage = () => {
       <section className = {layout.contentSection} >
         <div class="hero">
           <Spline scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
-          <img class="logo" src={logo}/>
+          <img alt="duh logo" class="logo" src={logo}/>
           <h1>Hey friend, 👋 Welcome to duhstin.com </h1>
         </div>
         <Header/>
@@ -116,7 +116,7 @@ const IndexPage = () => {
               <p><a href="mailto:hiitsdustindavis@gmail.com"><span>💌</span> hiitsdustindavis@gmail.com</a></p>
             </div>
             <div className={layout.half}>
-            <div><iframe src="https://giphy.com/embed/QWkuGmMgphvmE" width="100%" height="100%" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></div>
+            <div><iframe src="https://giphy.com/embed/QWkuGmMgphvmE" width="100%" height="100%" className="giphy-embed"></iframe></div>
             </div>
         </div>
         </div>
@@ -134,8 +134,6 @@ export function Head() {
     <>
     <title>Home Page</title>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.506/build/spline-viewer.js"></script>
-    {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script> */}
-    {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script> */}
     </>
     )
   }

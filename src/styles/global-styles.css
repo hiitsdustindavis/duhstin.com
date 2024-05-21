@@ -284,6 +284,10 @@ ul.no-bullet {
     font-family: 'Space Mono';
     font-style: italic;
 }
+iframe {
+    border: none;
+}
+
 @media screen and (max-width: 1024px) {
     .ability {
         padding-top: 48px;
