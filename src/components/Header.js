@@ -6,11 +6,12 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 function Header() {
   const [isHeaderAtTop, setIsHeaderAtTop] = useState(false);
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  // const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const [headerHeight, setHeaderHeight] = useState(0);
   const headerRef = useRef(null);
 
   useEffect(() => {
+    const windowHeight = window.innerHeight
     const headerHeight = headerRef.current.getBoundingClientRect().height;
     if (headerRef.current) {
       setHeaderHeight(headerHeight);
