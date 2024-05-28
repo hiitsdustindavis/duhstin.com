@@ -2,7 +2,7 @@
   "name": "duhstin.com",
   "version": "1.0.0",
   "private": true,
-  "description": "duhstin.com",
+  "description": "The UI/UX design and development work of Dustin Dustin",
   "author": "Dustin Davis",
   "keywords": [
     "gatsby"
@@ -20,7 +20,7 @@
     "gatsby": "^5.13.0",
     "gatsby-adapter-netlify": "^1.1.5",
     "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-plugin-favicons": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

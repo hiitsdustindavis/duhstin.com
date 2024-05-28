@@ -6,15 +6,23 @@ import { Link } from "gatsby"
 import {Helmet} from "react-helmet";
 import dustinPortait from '../images/dustin_portrait.jpg'
 import logo from '../images/duhstin.com-logo-static.jpg'
+import faviconSVG from '../images/favicon/favicon.svg'
+import faviconPNG from '../images/favicon/favicon.png'
+
+
+
+
 import * as layout from "../styles/layout.module.css"
-import * as typography from "../styles/typography.module.css"
 import "../components/MouseCursor"
 import "../styles/global-styles.css"
 
 const IndexPage = () => {
   return (
     <Layout>
-    <Helmet><body className="home" /></Helmet>
+    <Helmet><body className="home" />
+        <link rel="icon" type="image/svg+xml" href={faviconSVG}></link>
+        <link rel="icon" type="image/png" href={faviconPNG}></link>
+    </Helmet>
     <main>
       <section className = {layout.contentSection} >
         <div class="hero">
