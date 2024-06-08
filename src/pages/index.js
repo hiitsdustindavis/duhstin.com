@@ -20,24 +20,23 @@ const IndexPage = () => {
         <link rel="icon" type="image/png" href={faviconPNG}></link>
     </Helmet>
     <main>
-      <section className = {layout.contentSection} >
-        <div class="hero">
+      <section className={layout.contentSection} >
+        <div className="hero">
           <Spline scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
-          <img alt="duh logo" class="logo" src={logo}/>
           <h1>Hey friend, 👋 Welcome to duhstin.com </h1>
         </div>
         <Header/>
       </section>
-      <section className = {layout.contentSection} id="about">
+      <section className={layout.contentSection} id="about">
       <div className={layout.contentWrapper}>
-        <div class="row">
+        <div className="row">
           <div className={layout.full}>
               <h2>About</h2>
           </div>
         </div>
-        <div class="row">
+        <div className="row">
             <div className={layout.half}>
-              <img class="portrait" src={dustinPortait}/>
+              <img alt="Portrait of Dustin Davis" className="portrait" src={dustinPortait}/>
               {/* <P5Sketch /> */}
           </div>
             <div className={`${layout.half} text`}>
@@ -50,45 +49,57 @@ const IndexPage = () => {
         </div>
         </div>
       </section>
-      <section className = {layout.contentSection} id="ability">
+      <section className={layout.contentSection} id="ability">
         <div className={layout.contentWrapper}>
             <h2>Ability</h2>
 
-            <div class="row abilities cards">
-              <div class="col-3 ability">
-                  <div class="emoji"></div>
+            <div className="row abilities cards">
+              <div className="col-3 ability">
+                  <div className="emoji"></div>
                   <h3><span>39</span>Years of <br></br>thinking deeply</h3>
               </div>
-              <div class="col-3 ability">
-                  <div class="emoji"></div>
+              <div className="col-3 ability">
+                  <div className="emoji"></div>
                   <h3><span>26</span>Years Practicing <br></br>Design</h3>
               </div>
-              <div class="col-3 ability">
-                  <div class="emoji"></div>
+              <div className="col-3 ability">
+                  <div className="emoji"></div>
                   <h3><span>8</span>Years Practicing <br></br>Web Development</h3>
               </div>
             </div>
-            <div class="row abilities text">
-              <div class="col-3 ability-text">
+            <div className="row abilities text">
+              <div className="col-3 ability-text">
                 <h4>Software</h4>
-                <ul class="no-bullet">
-                  <li><img src="" alt=""/>Adobe Creative Suite</li>
-                  <li><img src="" alt=""/>Figma</li>
-                  <li><img src="" alt=""/>Spline 3D Design</li>
-                  <li><img src="" alt=""/>Visual Studio Code</li>
+                <ul className="no-bullet">
+                  <li>
+                    {/* <img src="" alt=""/> */}
+                  Adobe Creative Suite
+                  </li>
+                  <li>
+                    {/* <img src="" alt=""/> */}
+                  Figma
+                  </li>
+                  <li>
+                    {/* <img src="" alt=""/> */}
+                  Spline 3D Design
+                  </li>
+                  <li>
+                    {/* <img src="" alt=""/> */}
+                  Visual Studio Code
+                  </li>
                 </ul>
               </div>
-              <div class="col-3 ability-text">
+              <div className="col-3 ability-text">
                 <h4>Design Practices</h4>
-                <ul class="no-bullet">
+                <ul className="no-bullet">
                   <li>Solid Concepts &gt; Fancy Fillers</li>
                   <li>Systems = Consistency = Joyful UX</li>
                   <li>Empathy for Visitors Always</li>
                 </ul>
               </div>
-              <div class="col-3 ability-text">
+              <div className="col-3 ability-text">
                 <h4>Development Practices</h4>
-                <ul class="no-bullet">
+                <ul className="no-bullet">
                   <li>WordPress / PHP</li>
                   <li>React / Javascript / Node</li>
                   <li>CSS / Sass / CSS Modules</li>
@@ -97,7 +108,7 @@ const IndexPage = () => {
             </div>
           </div>
       </section>
-      {/* <section className = {layout.contentSection} id="simplicity">
+      {/* <section className={layout.contentSection} id="simplicity">
         <div className={layout.contentWrapper}>
           <div>
             <h2>Simplicity</h2>
@@ -105,14 +116,14 @@ const IndexPage = () => {
           </div>
         </div>
       </section> */}
-      <section className = {layout.contentSection} id="contact">
+      <section className={layout.contentSection} id="contact">
       <div className={layout.contentWrapper}>
-        <div class="row">
+        <div className="row">
           <div className={layout.full}>
               <h2>Contact</h2>
           </div>
         </div>
-        <div class="row">
+        <div className="row">
             <div className={`${layout.half} text`}>
               <p>Reach out anytime and I'll get right back to ya :)</p>
               <p><Link to="/cv/">Curriculum Vitae</Link></p>
@@ -129,6 +140,7 @@ const IndexPage = () => {
     </Layout>
   )
 }
+
 
 export default IndexPage
 
