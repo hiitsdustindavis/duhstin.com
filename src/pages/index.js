@@ -8,10 +8,6 @@ import dustinPortait from '../images/dustin_portrait.jpg'
 import logo from '../images/duhstin.com-logo-static.jpg'
 import faviconSVG from '../images/favicon/favicon.svg'
 import faviconPNG from '../images/favicon/favicon.png'
-
-
-
-
 import * as layout from "../styles/layout.module.css"
 import "../components/MouseCursor"
 import "../styles/global-styles.css"
@@ -136,7 +132,6 @@ const IndexPage = () => {
 
 export default IndexPage
 
-// export const Head = () => <title>Home Page</title>
 export function Head() {
   return (
     <>
