@@ -7,36 +7,18 @@ module.exports = {
     siteUrl: `https://duhstin.com`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-favicon`,
-    //   options: {
-    //     logo: './src/logo.png',
-  
-    //     // WebApp Manifest Configuration
-    //     appName: 'duhstin.com', // Inferred with your package.json
-    //     appDescription: 'The developement and design work of Dustin Davisz',
-    //     developerName: 'Dustin Davis',
-    //     developerURL: 'duhstin.com',
-    //     dir: 'auto',
-    //     lang: 'en-US',
-    //     background: '#FFD600',
-    //     theme_color: '#FFD600',
-    //     display: 'standalone',
-    //     orientation: 'any',
-    //     start_url: '/?homescreen=1',
-    //     version: '1.0',
-  
-    //     icons: {
-    //       android: true,
-    //       appleIcon: true,
-    //       appleStartup: true,
-    //       coast: false,
-    //       favicons: true,
-    //       firefox: true,
-    //       yandex: false,
-    //       windows: false
-    //     }
-    //   }
-    // }
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Duhstin.com`,
+        short_name: `Duhstin.com`,
+        start_url: `/`,
+        background_color: `#5bbad5`,
+        theme_color: `#da532c`,
+        display: `standalone`,
+        icon: `src/favicon/favicon.png`, // This path is relative to the root of the site.
+        include_favicon: true, // Include favicon
+      },
+    },
   ],
 }

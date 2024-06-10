@@ -2,12 +2,10 @@ import * as React from "react"
 import Spline from '@splinetool/react-spline'
 import Layout from "../components/Layout"
 import Header from '../components/Header'
-import { Link } from "gatsby"
+import Favicon from '../components/Favicon'
 import {Helmet} from "react-helmet";
+import { Link } from "gatsby"
 import dustinPortait from '../images/dustin_portrait.jpg'
-import logo from '../images/duhstin.com-logo-static.jpg'
-import faviconSVG from '../images/favicon/favicon.svg'
-import faviconPNG from '../images/favicon/favicon.png'
 import * as layout from "../styles/layout.module.css"
 import "../components/MouseCursor"
 import "../styles/global-styles.css"
@@ -15,10 +13,10 @@ import "../styles/global-styles.css"
 const IndexPage = () => {
   return (
     <Layout>
-    <Helmet><body className="home" />
-        <link rel="icon" type="image/svg+xml" href={faviconSVG}></link>
-        <link rel="icon" type="image/png" href={faviconPNG}></link>
-    </Helmet>
+      <Helmet>
+        <body className="home" />
+        <Favicon></Favicon>
+      </Helmet>
     <main>
       <section className={layout.contentSection} >
         <div className="hero">
