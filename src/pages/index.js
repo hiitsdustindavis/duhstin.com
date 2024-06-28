@@ -20,7 +20,7 @@ const IndexPage = () => {
     <main>
       <section className={layout.contentSection} >
         <div className="hero">
-          <Spline scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
+          <Spline loading="eager" scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
           <h1>Hey friend, 👋 Welcome to duhstin.com </h1>
         </div>
         <Header/>
