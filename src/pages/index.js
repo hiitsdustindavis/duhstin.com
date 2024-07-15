@@ -2,15 +2,24 @@ import * as React from "react"
 import Spline from '@splinetool/react-spline'
 import Layout from "../components/Layout"
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import Favicon from '../components/Favicon'
+import cx from 'classnames';
 import {Helmet} from "react-helmet";
 import { Link } from "gatsby"
 import dustinPortait from '../images/dustin_portrait.jpg'
+import logo from '../images/duhstin.com-logo-static.jpg'
 import * as layout from "../styles/layout.module.css"
 import "../components/MouseCursor"
 import "../styles/global-styles.css"
 
+
+// const ClientSideOnlyLazy = React.lazy(() =>
+//   import ("../components/MouseCursor")
+// )
+
 const IndexPage = () => {
+  // const isSSR = typeof window === "undefined";
   return (
     <Layout>
       <Helmet>
@@ -18,14 +27,21 @@ const IndexPage = () => {
         <Favicon></Favicon>
       </Helmet>
     <main>
-      <section className={layout.contentSection} >
+      <section className={layout.contentWrapperfullScreen} >
         <div className="hero">
+          {/* {!isSSR && (
+            <React.Suspense fallback={<div>Loading...</div>}>
+              <ClientSideOnlyLazy />
+              <Spline></Spline>
+            </React.Suspense>
+          )} */}
           <Spline loading="eager" scene="https://prod.spline.design/xRvQgZSl6VwHLvFQ/scene.splinecode" />
+          <img className='logo' alt="duhstin dot com logo" src={logo}/>
           <h1>Hey friend, 👋 Welcome to duhstin.com </h1>
         </div>
         <Header/>
       </section>
-      <section className={layout.contentSection} id="about">
+      <section className={cx(layout.contentSection, layout.fullHeight)} id="about">
       <div className={layout.contentWrapper}>
         <div className="row">
           <div className={layout.full}>
@@ -47,7 +63,7 @@ const IndexPage = () => {
         </div>
         </div>
       </section>
-      <section className={layout.contentSection} id="ability">
+      <section className={cx(layout.contentSection, layout.fullHeight)} id="ability">
         <div className={layout.contentWrapper}>
             <h2>Ability</h2>
 
@@ -114,7 +130,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section> */}
-      <section className={layout.contentSection} id="contact">
+      <section className={cx(layout.contentSection, layout.fullHeight)} id="contact">
       <div className={layout.contentWrapper}>
         <div className="row">
           <div className={layout.full}>
@@ -135,6 +151,7 @@ const IndexPage = () => {
         </div>
       </section>
     </main>
+    <Footer></Footer>
     </Layout>
   )
 }

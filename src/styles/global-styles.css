@@ -64,23 +64,24 @@ nav a {
 h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
 }
-a {
+a:not(.has-img) {
     color: inherit;
     transition: all .25s ease-in-out;
+    position: relative;
 }
-p a:after {
+a:not(.has-img):after {
     content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
+    height: 1px;
+    bottom: -2px;
     left: 0;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     background-color: #111;
 }
-p a:hover::after {
+a:not(.has-img):hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }

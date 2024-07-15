@@ -1,10 +1,17 @@
 import React from 'react'
+import * as layout from "../styles/layout.module.css"
+import cx from 'classnames';
+
 
 export default function Footer() {
   return (
-    <div id="footer">
-        <h2>Footer</h2>
-        <p>Copyright your mom 2001</p>
-    </div>
+    <footer id="footer">
+      <section className={cx(layout.contentSection)} id="about">
+          <div className={cx(layout.contentWrapper, layout.short, layout.row, layout.spcBtwn)}>
+            <p>© Copyright Dustin Davis 2024</p>
+            <div>Designed and built by your truly ;)</div>
+        </div>
+      </section>
+    </footer>
   )
 }
