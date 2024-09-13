@@ -12,7 +12,7 @@ export default function CVPage() {
       <Helmet><body className="page-cv" /></Helmet>
       <section className={layout.contentWrapper}>
         <div class="container">
-          <Link to="/"><img class="logo" src={logo}/></Link>
+          <Link to="/"><img class="logo has-img" src={logo}/></Link>
           <div class=" row contact">
             <div className={layout.half}>
               <h3>Dustin Davis</h3>

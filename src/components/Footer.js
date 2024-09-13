@@ -9,7 +9,7 @@ export default function Footer() {
       <section className={cx(layout.contentSection)} id="about">
           <div className={cx(layout.contentWrapper, layout.short, layout.row, layout.spcBtwn)}>
             <p>© Copyright Dustin Davis 2024</p>
-            <div>Designed and built by your truly ;)</div>
+            <div>Designed and built by yours truly ;)</div>
         </div>
       </section>
     </footer>
