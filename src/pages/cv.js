@@ -12,8 +12,8 @@ export default function CVPage() {
       <Helmet><body className="page-cv" /></Helmet>
       <section className={layout.contentWrapper}>
         <div class="container">
-          <Link to="/"><img class="logo has-img" src={logo}/></Link>
-          <div class=" row contact">
+        <Link className="has-img" to="/"><img alt="Duhstin dot com logo" className="logo" src={logo}/></Link>
+          <div class="row contact">
             <div className={layout.half}>
               <h3>Dustin Davis</h3>
               <p><a href="https://duhstin.com">duhstin.com</a></p>

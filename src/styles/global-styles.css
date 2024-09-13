@@ -64,12 +64,12 @@ nav a {
 h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
 }
-a:not:not(.button, .has-imag) {
+a:not(.button):not(.has-img) {
     color: inherit;
     transition: all .25s ease-in-out;
     position: relative;
 }
-a:not(.has-img, .button):after {
+a:not(.has-img):not(.button):after {
     content: "";
     position: absolute;
     width: 100%;
@@ -81,9 +81,13 @@ a:not(.has-img, .button):after {
     transition: transform 0.25s ease-out;
     background-color: #111;
 }
-a:not(.has-img, .button):hover::after {
+a:not(.has-img):not(.button):hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+a.button:after, a.has-img:after {
+    content: ' ';
+    display: none;
 }
 p a {
     position: relative;
