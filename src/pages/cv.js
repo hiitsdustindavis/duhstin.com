@@ -42,23 +42,23 @@ export default function CVPage() {
             <div className={layout.third}>
               <strong>Software</strong>
               <ul>
-                <li>Figma</li>
+                <li>Figma + AI</li>
                 <li>Adobe Creative Suite</li>
                 <li>Affinity</li>
-                <li>Spline Design 3D</li>
-                <li>Blender</li>
-                <li>Unity</li>
+                <li>Relume AI</li>
+                <li>Google Stitch</li>
+                <li>Google Gemini</li>
               </ul>
             </div>
             <div className={layout.third}>
               <strong>Dev Technologies</strong>
               <ul>
-              <li>Wordpress / PHP</li>
-              <li>jQuery / JavaScript / React </li>
+                <li>Wordpress / PHP</li>
+                <li>jQuery / JavaScript / React </li>
                 <li>HTML5 / Markdown</li>
                 <li>CSS3 / SCSS / SASS</li>
                 <li>Git / Subversion</li>
-                <li>NPM / Gulp / Bash Terminal</li>
+                <li>Node / Command Line</li>
               </ul>
             </div>
           </div>
