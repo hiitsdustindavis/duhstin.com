@@ -144,8 +144,8 @@ const IndexPage = () => {
               <p>Portfolio upon request ;)</p>
               <p><a href="mailto:hiitsdustindavis@gmail.com"><span>💌</span> hiitsdustindavis@gmail.com</a></p>
             </div>
-            <div className={layout.half}>
-            <div><iframe src="https://giphy.com/embed/QWkuGmMgphvmE" width="100%" height="100%" className="giphy-embed"></iframe></div>
+            <div className={`${layout.half} image`}>
+            <div><iframe src="https://giphy.com/embed/QWkuGmMgphvmE" width="300" height="150" className="giphy-embed"></iframe></div>
             </div>
         </div>
         </div>

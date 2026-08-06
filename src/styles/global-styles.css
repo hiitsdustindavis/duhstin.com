@@ -141,6 +141,10 @@ ul.no-bullet {
     margin-top: -10%;
     pointer-events: none;
 }
+.layout-module--half--e3b2f.image {
+    display: flex;
+    justify-content: center;
+}
 /* About */
 #about .text p, #contact .text p {
     margin-bottom: 30px;

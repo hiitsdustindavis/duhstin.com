@@ -90,4 +90,9 @@
     .contentSection {
         padding: 0px;
     }
+    .contentSection:first-of-type {
+        width: 100%;
+        min-height: unset;
+        padding: 0px;
+    }
 }
