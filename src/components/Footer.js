@@ -8,7 +8,7 @@ export default function Footer() {
     <footer id="footer">
       <section className={cx(layout.contentSection)} id="about">
           <div className={cx(layout.contentWrapper, layout.short, layout.row, layout.spcBtwn)}>
-            <p>© Copyright Dustin Davis 2024</p>
+            <p>© Copyright Dustin Davis {new Date().getFullYear()}</p>
             <div>Designed and built by yours truly ;)</div>
         </div>
       </section>
